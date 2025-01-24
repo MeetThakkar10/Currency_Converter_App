@@ -1,0 +1,167 @@
+/* Reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.amount {
+    text-align: left;
+}
+
+.amount p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.amount input {
+    width: 100%;
+    padding: 0.9rem;
+    border: 2px solid transparent;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: rgba(240, 240, 240, 0.7);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.amount input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+}
+
+.from, .to {
+    flex: 1;
+    text-align: left;
+}
+
+.from p, .to p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.from select, .to select {
+    width: 100%;
+    padding: 0.9rem;
+    border: 2px solid transparent;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(240, 240, 240, 0.7);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.from select:hover, .to select:hover {
+    cursor: pointer;
+    border-color: #4facfe;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+}
+
+.fa-arrow-right-arrow-left {
+    font-size: 2rem;
+    color: #4facfe;
+    transition: transform 0.5s ease, color 0.3s;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.fa-arrow-right-arrow-left:hover {
+    transform: rotate(180deg);
+    color: #00f2fe;
+}
+
+img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.msg {
+    background-color: rgba(245, 245, 245, 0.8);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    color: #666;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 1rem;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    color: #fff;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+#Exchange_Icon:hover {
+    cursor: pointer;
+}
